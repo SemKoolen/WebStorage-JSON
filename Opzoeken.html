@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/start.js"></script>
+    <script src="js/TextArea.js"></script>
+    <script src="js/controller/Controller.js"></script>
+    <script src="js/model/Observable.js"></script>
+    <script src="js/model/LogModel.js"></script>
+    <script src="js/view/Observer.js"></script>
+    <script src="js/view/LogView.js"></script>
+  </head>
+
+  <body>
+    <div id="menu" class="links">
+      <a class="buttons" href="Toevoegen.html">Toevoegen</a>
+      <a class="buttons" href="Bewerken.html">Bewerken</a>
+      <a class="buttons current" href="Opzoeken.html" disabled>Opzoeken</a>
+    </div>
+    <div id="container">
+      <header>
+        <h1>Logboek zoeken</h1>
+      </header>
+      <main>
+        <form>
+          <h2>Log id</h2>
+          <hr>
+          <input id="day" type="text" placeholder="Werkdag:"></input>
+          <div class="save">
+            <input id="search2" class="buttons" type="button" value="Zoeken"></input>
+            <h1 id="useless" text="false">false</h1>
+          </div>
+          <h2>Log info</h2>
+          <hr>
+          <div id="table">
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

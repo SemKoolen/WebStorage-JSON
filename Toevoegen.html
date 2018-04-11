@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/start.js"></script>
+    <script src="js/controller/Controller.js"></script>
+    <script src="js/model/Observable.js"></script>
+    <script src="js/model/LogModel.js"></script>
+    <script src="js/view/Observer.js"></script>
+    <script src="js/view/LogView.js"></script>
+    <script src="js/TextArea.js"></script>
+  </head>
+
+  <body>
+    <div id="menu">
+      <a class="buttons links current" href="Toevoegen.html" disabled>Toevoegen</a>
+      <a class="buttons links" href="Bewerken.html">Bewerken</a>
+      <a class="buttons links" href="Opzoeken.html">Opzoeken</a>
+    </div>
+    <div id="container">
+      <header>
+        <h1>Logboek toevoegen</h1>
+      </header>
+      <main>
+        <form>
+          <h2>Log id</h2>
+          <hr>
+          <input id="day" type="text" placeholder="Werkdag:"></input>
+          <h2>Log info</h2>
+          <hr>
+          <div class="grid">
+            <div>
+              <h2>Gisteren:</h2>
+              <textarea class="text" id="value1" rows="1" style="height:1em;"></textarea>
+            </div>
+            <div class="middleInput">
+              <h2>Problemen:</h2>
+              <textarea class="text" id="value2" rows="1" style="height:1em;"></textarea>
+            </div>
+            <div>
+              <h2>Vandaag:</h2>
+              <textarea class="text" id="value3" rows="1" style="height:1em;"></textarea>
+            </div>
+          </div>
+          <hr>
+          <div class="save">
+            <font id="confirm"></font>
+            <input id="save" class="buttons" type="button" value="Opslaan"></input>
+            <p id="useless">true</p>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
